@@ -2,3 +2,11 @@
 • What does fast-forward in Git mean?
 • Why should you have different branches?
 • In a project how many remote Git repositories do you usually have?
+1. A gitignore file is the file where we mention all the file types that we don't need to put up on the remote repository. These files include system file, OS specific files and others. For a JAVA project it should include package files like 
+*.jar
+*.war
+*.ear
+and files such as .class, .log.
+2. If a branch that's created from master has new changes  and the master branch is not updated after the new branch was created, the branch can be automatically pushed into the master branch. This mechanism is called fast-forward in Git.
+3. Different branches are very important for a software project since multiple developers work on diiferent features of the project at all times. To avoid conflict between different code bases for different developers, different branches are used.
+4. For a project, there can be multiple remote repositories, but usually there's only one repository where the the whole and latest codebase resides.  
